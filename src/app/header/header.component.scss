@@ -1,0 +1,77 @@
+header {
+    width:100%;
+    height: 80px;
+    z-index:-1000;
+    background-color: #35273b;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    transform: skew(-20deg);
+    min-height:100%;
+    right:0;
+    float:right;
+    height:100%;
+    position:relative;
+    width:auto;
+
+    a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size:2em;
+        margin: 0;
+        display:inline-flex;
+        justify-content: center;
+        align-content: center;
+        height:100%;
+    }
+}
+
+.buttons > a {
+    
+}
+
+a:nth-child(odd) {
+    background-color: #3f2d47;
+    min-height:100%;
+}
+
+a:hover {
+    background-color: #09B26B !important;
+    transition: 0.3s;
+}
+
+a:nth-child(even) {
+    background-color: #35273b;
+    min-height:100%;
+}
+
+a span {
+    display:inline-block;
+    padding: 0 5px 0 5px;
+    -moz-transform: skew(20deg);
+    transform: skew(20deg);
+    align-self: center;
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+}
+
+.icons {
+    position:fixed;
+    bottom:0em;
+    right:0em;
+    display:block;
+
+    a {
+        display:block;
+        margin:10px;
+    }
+}
+
+// logo
+
+.middle > div  > strong {
+    font-size:2em;
+    color:white;
+    align-self:center;
+}

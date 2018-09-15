@@ -1,0 +1,24 @@
+.about {
+    background-color: #2e003e;
+    color:white;
+    border-radius: 4px;
+    text-align:left;
+    margin:20px auto;
+    padding: 20px;
+    height:auto;
+    padding-bottom:5px;
+    margin-bottom: 10px;
+    width:60%;
+
+    div {
+        font-size: 1.1rem;
+        margin: 0px 40px 20px;
+        font-weight:200;
+        width:60%;
+        color:white;
+    }
+
+    img {
+        float:right;
+    }
+}
