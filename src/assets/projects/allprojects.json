@@ -1,0 +1,112 @@
+[
+  {
+    "imageLink":"omelette.png",
+    "videoLink":"omelette.mp4",
+    "markdownLink":"omelette.md",
+    "title":"Space Omelette",
+    "description":"Space Omelette was a game made for our Expanding Space assignment. <br>It is a puzzle game where you're supposed to progress by opening the doors with the help of eggs and buttons.",
+    "tags":["School","Unity","C#","2D"],
+
+    "info" : {
+      "Status":"Finished",
+      "Time":"8 weeks",
+      "Type":"school",
+      "Team":"2 devs, 3 artists",
+      "Language":"C#",
+      "Engine":"Unity"
+    },
+
+    "links" : {
+      "github":"https://github.com/stepperman/asstroids"
+    }
+  },
+
+  {
+    "imageLink":"anti-gravity.png",
+    "videoLink":"anti-gravity.mp4",
+    "title":"Anti-Gravity",
+    "markdownLink":"antigravity.md",
+    "description":"Anti Gravity was a game I made for a game maker platformer assignment, in this assignment you were just supposed to make a platformer, but I tried making the most important part fluid animation, where animation is never interrupted by what the player does. <br>Akin to Prince of Persia.",
+    "github":"https://github.com/stepperman/anti-gravity",
+    "tags":["School","Gamemaker","2D"],
+
+    "info" : {
+      "Status":"Finished",
+      "Time":"4 weeks",
+      "Type":"School and Personal",
+      "Engine": "GameMaker"
+    },
+
+    "links" : {
+      "github":"https://github.com/stepperman/anti-gravity"
+    }
+  },
+
+  {
+    "imageLink":"saplingandflint.png",
+    "videoLink":"saplingandflint.mp4",
+    "title":"Sapling & Flint",
+    "markdownLink":"saplingandflint.md",
+    "description":"Sapling & Flint was a game made for the Myth assignment at my school. We had a list of myths, and we chose Sapling and Flint.",
+    "github":"https://github.com/lghenk/Mythe-Project",
+    "tags":["School","Unity","C#","3D"],
+
+    "info" : {
+      "Status":"Finished",
+      "Time":"8 weeks",
+      "Type":"School",
+      "Team":"3 devs, 4 artists",
+      "Language":"C#",
+      "Engine":"Unity"
+    },
+
+    "links" : {
+      "github":"https://github.com/lghenk/Mythe-Project"
+    }
+  },
+
+  {
+    "imageLink":"cuphead.png",
+    "videoLink":"cuphead.mp4",
+    "title":"Cuphead",
+    "markdownLink":"cuphead.md",
+    "description":"In this Cuphead remake we focused on making a new boss for cuphead, and a fun little mode with highscores.",
+    "github":"https://github.com/lghenk/Mythe-Project",
+    "tags":["School","Unity","C#","2D"],
+
+    "info" : {
+      "Status":"Finished",
+      "Time":"4 weeks",
+      "Type":"School",
+      "Team":"2 devs, 4 artists",
+      "Language": "C#",
+      "Engine" : "Unity"
+    },
+
+    "links" : {
+      "github":"https://github.com/lghenk/Cuphead"
+    }
+  },
+  {
+    "imageLink":"minesweeper.png",
+    "videoLink":"minesweeper.mp4",
+    "title":"Minesweeper",
+    "markdownLink":"minesweeper.md",
+    "description":"Mine sweeper with the style of Windows 98. Made for the floodfill technique.",
+    "github":"https://github.com/stepperman/minesweeper",
+    "tags":["School","Javascript","2D"],
+
+    "info" : {
+      "Status":"Finished",
+      "Time":"3 days",
+      "Type":"School",
+      "Language": "Javascript",
+      "Engine" : "HTML5"
+    },
+
+    "links" : {
+      "github":"https://github.com/stepperman/minesweeper",
+      "play":"http://stepperman.me/minesweeper"
+    }
+  } 
+]
