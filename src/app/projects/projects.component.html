@@ -1,3 +1,33 @@
-<p>
-  projects works!
-</p>
+<div class="wrapper projects">
+  <div *ngFor="let project of projects" class="actualproject">
+    <div id="project" class="project">
+        <div id="projectleft" (mouseenter)="mouseOver($event)" (mouseleave)="mouseLeave($event)">
+            <div class="projectimagewrapper">
+                <img class="projectimage" src="assets/img/{{project.imageLink}}"/>
+            </div>
+
+            <div class="projectvideo">
+                <video muted loop>
+                    <source src="assets/img/{{project.videoLink}}"/>
+                </video>
+            </div>
+        </div>
+
+        <div id="projectright">
+            <h2 id="title">{{project.title}}</h2>
+
+            <p id="description" [innerHTML]="project.description | keepHTML"></p>
+
+            <div id="taglist">
+                <span data-badge-caption="" *ngFor="let tag of project.tags" id="tags" class="new badge">{{tag}}</span>
+            </div>
+
+            <a id="button" style="bottom:1em;right:1em;position:absolute" class="waves-effect waves-light btn"><i class="material-icons right">chevron_right</i>Read more</a>
+        </div>
+
+        <span hidden id="links">links</span>
+        <span hidden id="info">info</span>
+        <span hidden id="markdown">markdown</span>
+    </div>
+  </div>
+</div>

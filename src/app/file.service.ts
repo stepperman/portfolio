@@ -12,4 +12,8 @@ export class FileService {
   public readFile(file:string, callback) {
     this.http.get(file, {'responseType':'text'}).subscribe(data=>callback(data));
   }
+
+  public readJson(file:string, callback) {
+    this.http.get(file, {responseType:"json"}).subscribe(data=>callback(data));
+  }
 }
