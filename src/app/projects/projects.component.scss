@@ -76,6 +76,7 @@
     position:fixed;
     z-index:50;
     overflow-y: scroll;
+    top:0;
 }
 
 #projectlistwrapper {
@@ -229,6 +230,19 @@ span.badge.new {
 
 label {
     color:white !important;
+}
+
+.infoclosed {
+    transform: scale(0.8);
+    margin-top:-10% !important;
+    transition: 0.25s;
+    opacity: 0;
+}
+
+.infoopened {
+    transform: scale(1);
+    transition: 0.25s;
+    opacity: 1;
 }
 
 .actualproject {

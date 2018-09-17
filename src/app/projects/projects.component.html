@@ -1,3 +1,36 @@
+<div (mousedown)="closeProject($event)" hidden id="projectlist">
+    <div onclick="javascript:void(0)" class="infoclosed" id="projectlistwrapper">
+        <div id="info_video">
+            <video loop autoplay muted>
+              <source src="assets/img/{{currentProject.videoLink}}"/>
+            </video>
+        </div>
+        <div id="info_description" [innerHTML]="currentProject.parsedmarkdown | keepHTML">
+        </div>
+
+        <div id="info_other">
+
+            <h5>Info</h5>
+
+            <table class="striped">
+                <tbody>
+                  <tr *ngFor="let key of objectKeys(currentProject.info)">
+                    <th>{{key}}</th>
+                    <th>{{currentProject.info[key]}}</th>
+                  </tr>
+              </tbody>
+            </table>
+        </div>
+
+        <div id="info_links">
+            <h5>Links</h5>
+            <a *ngFor="let link of objectKeys(currentProject.links)" href="{{currentProject.links[link]}}" class="waves-effect grey darken-3 waves-light btn">
+              {{link}} <i class="fab right fa-{{link}}"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
 <div class="wrapper projects">
   <div *ngFor="let project of projects" class="actualproject">
     <div id="project" class="project">
@@ -22,12 +55,8 @@
                 <span data-badge-caption="" *ngFor="let tag of project.tags" id="tags" class="new badge">{{tag}}</span>
             </div>
 
-            <a id="button" style="bottom:1em;right:1em;position:absolute" class="waves-effect waves-light btn"><i class="material-icons right">chevron_right</i>Read more</a>
+            <a id="button" (mousedown)="openProject(project)" style="bottom:1em;right:1em;position:absolute" class="waves-effect waves-light btn"><i class="material-icons right">chevron_right</i>Read more</a>
         </div>
-
-        <span hidden id="links">links</span>
-        <span hidden id="info">info</span>
-        <span hidden id="markdown">markdown</span>
     </div>
   </div>
 </div>

@@ -15,7 +15,10 @@ export class ProjectsComponent implements OnInit {
 
   constructor(private service:FileService) { }
 
+  objectKeys = Object.keys;
+
   projects:Project[];
+  currentProject:Project = new Project();
 
   ngOnInit() {
     let projectjson = this.service.readJson("./assets/projects/allprojects.json", (data) => {
@@ -50,4 +53,45 @@ export class ProjectsComponent implements OnInit {
       video.pause();
   }
 
+  openProject(project) {
+    this.currentProject = project;
+
+    const projectList = document.getElementById("projectlist");
+    const info = <HTMLElement>projectList.childNodes[0];
+    const video = <HTMLVideoElement>projectList.querySelector("video");
+    // open the dialog thingy.
+    projectList.hidden = false;
+    info.classList.remove("infoclosed");
+    info.classList.add("infoopened");
+
+    document.body.style.overflow = "hidden";
+
+    this.service.readFile("./assets/md/" + this.currentProject.markdownLink, (data) => {
+      this.currentProject.parsedmarkdown = markdown.toHTML(data);
+      console.log(this.currentProject.parsedmarkdown)
+    });
+
+    window.setTimeout(() => {
+      video.pause();
+      video.load();
+      video.play();
+    }, 200)
+  }
+
+  closeProject($event) {
+    const projectList = document.getElementById("projectlist");
+    const info = <HTMLElement>projectList.childNodes[0];
+    const video = <HTMLVideoElement>projectList.querySelector("video");
+
+    let isClickInside = $event.target.contains(info);
+    if (!isClickInside) return;
+
+    info.classList.remove("infoopened");
+    info.classList.add("infoclosed");
+    document.body.style.overflow = "auto";
+    window.setTimeout(() => {
+      projectList.hidden = true;
+      video.pause();
+    }, 10)
+  }
 }
