@@ -19,6 +19,7 @@ export class ProjectsComponent implements OnInit {
 
   projects:Project[];
   currentProject:Project = new Project();
+  loading = "Loading content, please wait...";
 
   ngOnInit() {
     let projectjson = this.service.readJson("./assets/projects/allprojects.json", (data) => {

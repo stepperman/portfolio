@@ -5,7 +5,7 @@
               <source src="assets/img/{{currentProject.videoLink}}"/>
             </video>
         </div>
-        <div id="info_description" [innerHTML]="currentProject.parsedmarkdown | keepHTML">
+        <div id="info_description" [innerHTML]="currentProject.parsedmarkdown || loading | keepHTML">
         </div>
 
         <div id="info_other">
@@ -24,7 +24,7 @@
 
         <div id="info_links">
             <h5>Links</h5>
-            <a *ngFor="let link of objectKeys(currentProject.links)" href="{{currentProject.links[link]}}" class="waves-effect grey darken-3 waves-light btn">
+            <a target="_blank" *ngFor="let link of objectKeys(currentProject.links)" href="{{currentProject.links[link]}}" class="waves-effect grey darken-3 waves-light btn">
               {{link}} <i class="fab right fa-{{link}}"></i>
             </a>
         </div>
@@ -55,7 +55,7 @@
                 <span data-badge-caption="" *ngFor="let tag of project.tags" id="tags" class="new badge">{{tag}}</span>
             </div>
 
-            <a id="button" (mousedown)="openProject(project)" style="bottom:1em;right:1em;position:absolute" class="waves-effect waves-light btn"><i class="material-icons right">chevron_right</i>Read more</a>
+            <a id="button" (click)="openProject(project)" style="bottom:1em;right:1em;position:absolute" class="waves-effect waves-light btn"><i class="material-icons right">chevron_right</i>Read more</a>
         </div>
     </div>
   </div>

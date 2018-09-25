@@ -4,6 +4,8 @@ header {
     z-index:-1000;
     background-color: #35273b;
     margin-bottom: 10px;
+    z-index:10;
+    position:relative;
 }
 
 .buttons {
@@ -25,10 +27,6 @@ header {
         align-content: center;
         height:100%;
     }
-}
-
-.buttons > a {
-    
 }
 
 a:nth-child(odd) {
@@ -61,6 +59,7 @@ a span {
     bottom:0em;
     right:0em;
     display:block;
+    z-index:999;
 
     a {
         display:block;

@@ -81,6 +81,7 @@
 
 #projectlistwrapper {
     width: 60%;
+    max-width:900px;
     z-index:60;
     position:relative;
     margin: 20px auto;
@@ -121,44 +122,44 @@ tag::after {
     width:100%;
 }
 
-#info_description h1 {
-    font-size:1.6em;
-}
-
-#info_description h2 {
-    font-size:1.4em;
-}
-#info_description h3 {
-    font-size:1.3em;
-}
-
-#info_description h4 {
-    font-size:1.1em;
-}
-
-#info_description h6 {
-    font-size:0.8em;
-    color:grey;
-}
-
-#info_description p {
-    font-size:1em;
-}
-
 #info_description {
     width:50%;
     float:left;
-}
 
-#info_description ul  {
-    list-style: circle;
-    padding-left:40px;
-}
+    ::ng-deep p {
+        font-size:16px !important;
+    }
 
-#info_description li {
-    list-style: circle;
-}
+     ::ng-deep h1 {
+        font-size: 32px !important;
+    }
 
+     ::ng-deep h2 {
+        font-size:30px  !important;
+    }
+
+     ::ng-deep h3 {
+        font-size:28px  !important;
+    }
+
+     ::ng-deep h4 {
+        font-size:26px !important;
+    }
+
+     ::ng-deep h6 {
+        font-size:14px !important;
+        color:grey;
+    }
+
+     ::ng-deep ul  {
+        list-style: circle;
+        padding-left:40px;
+    }
+
+    ::ng-deep li {
+        list-style: circle;
+    }
+}
 
 code {
     background-color: #dad7d2;
@@ -174,6 +175,15 @@ code {
     float:right;
     width:300px;
     margin-top:20px;
+
+    a {
+        display:block;
+        margin:2px;
+
+        i {
+            position:absolute;
+        }
+    }
 }
 
 #taglist {
