@@ -1,5 +1,5 @@
 .about {
-    background-color: #2e003e;
+    background-color: #35273b;
     color:white;
     border-radius: 4px;
     text-align:left;
@@ -7,18 +7,24 @@
     padding: 20px;
     height:auto;
     padding-bottom:5px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     width:60%;
 
     div {
         font-size: 1.1rem;
-        margin: 0px 40px 20px;
+        margin: 20px;
         font-weight:200;
         width:60%;
         color:white;
     }
 
+    ::ng-deep h1{
+        margin: 2px;
+        padding: 2px;
+    }
     img {
         float:right;
+        width:40%;
+        margin: 10px;
     }
 }

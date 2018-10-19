@@ -108,5 +108,27 @@
       "github":"https://github.com/stepperman/minesweeper",
       "play":"http://stepperman.me/minesweeper"
     }
-  } 
+  },
+
+  {
+    "imageLink":"dground.png",
+    "videoLink":"dground.mp4",
+    "title":"Destructible Ground",
+    "markdownLink":"dground.md",
+    "description":"Using SFML, a collision mask, and some shaders, stuff can collide with the ground when it's destroyed.",
+    "github":"https://github.com/stepperman/destructableground",
+    "tags":["School","C++","SFML","2D"],
+
+    "info" : {
+      "Status":"Finished",
+      "Time":"4 days",
+      "Type":"Assignment",
+      "Language": "C++",
+      "Engine" : "Javascript"
+    },
+
+    "links" : {
+      "github":"https://github.com/stepperman/destructableground"
+    }
+  }  
 ]
