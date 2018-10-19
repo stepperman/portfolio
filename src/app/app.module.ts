@@ -9,6 +9,7 @@ import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { HttpClientModule } from '@angular/common/http';
 import { KeepHTMLPipe } from './keep-html.pipe';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { KeepHTMLPipe } from './keep-html.pipe';
     HomeComponent,
     AboutComponent,
     ProjectsComponent,
-    KeepHTMLPipe
+    KeepHTMLPipe,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

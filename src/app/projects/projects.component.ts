@@ -80,12 +80,19 @@ export class ProjectsComponent implements OnInit {
   }
 
   closeProject($event) {
+    
     const projectList = document.getElementById("projectlist");
+    const wrapper = document.getElementById("projectlistwrapper");
     const info = <HTMLElement>projectList.childNodes[0];
     const video = <HTMLVideoElement>projectList.querySelector("video");
 
-    let isClickInside = $event.target.contains(info);
-    if (!isClickInside) return;
+    //let isClickInside = $event.target.contains(info);
+    //if (!isClickInside) return;
+
+    console.log($event.target == wrapper);
+    console.log(wrapper.contains($event.target));
+    console.log(window.outerWidth >= $event.clientX);
+    if($event.target == wrapper || wrapper.contains($event.target) || window.outerWidth <= $event.clientX) return;
 
     info.classList.remove("infoopened");
     info.classList.add("infoclosed");
