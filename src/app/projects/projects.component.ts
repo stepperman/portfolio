@@ -92,7 +92,7 @@ export class ProjectsComponent implements OnInit {
     console.log($event.target == wrapper);
     console.log(wrapper.contains($event.target));
     console.log(window.outerWidth >= $event.clientX);
-    if($event.target == wrapper || wrapper.contains($event.target) || window.outerWidth <= $event.clientX) return;
+    if($event.target == wrapper || wrapper.contains($event.target) || wrapper.clientWidth - wrapper.scrollWidth <= $event.clientX) return;
 
     info.classList.remove("infoopened");
     info.classList.add("infoclosed");
