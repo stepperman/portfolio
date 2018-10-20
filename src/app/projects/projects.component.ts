@@ -89,10 +89,9 @@ export class ProjectsComponent implements OnInit {
     //let isClickInside = $event.target.contains(info);
     //if (!isClickInside) return;
 
-    console.log($event.target == wrapper);
-    console.log(wrapper.contains($event.target));
-    console.log(window.outerWidth >= $event.clientX);
-    if($event.target == wrapper || wrapper.contains($event.target) || wrapper.scrollWidth <= $event.clientX) return;
+    console.log(info.scrollWidth);
+    console.log($event.clientX);
+    if($event.target == wrapper || wrapper.contains($event.target) || projectList.scrollWidth <= $event.clientX) return;
 
     info.classList.remove("infoopened");
     info.classList.add("infoclosed");
