@@ -18,4 +18,6 @@ export class Project {
 
     info;
 
+    hidden : boolean = false;
+
 }

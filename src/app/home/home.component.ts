@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-const symbols = '!@#$%1037^&*OQZX{}[]()_+=-0/.?><,~`';
+const symbols = '!@#$%1037^&*OQZX{}[]()_+=-0.?,~`';
 const wantedname = "Antonio Bottelier<br>professionele gozer";
 
 declare var String:any;
@@ -22,10 +22,9 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    //let a:HTMLAudioElement;
-    //(a = <HTMLAudioElement>document.querySelector("audio")).oncanplay = function() {
-    //  a.play();
-    //}
+
+    // chrome fix for playing the video
+    document.querySelector("video").play();
 
     this.namedisplay = "";
     this.currentLetter = 0;
@@ -41,7 +40,9 @@ export class HomeComponent implements OnInit {
     if(this.currentLetter == wantedname.length) return;
 
     this.namedisplay = this.namedisplay.replaceAt(this.currentLetter, wantedname[this.currentLetter]);
-    this.currentLetter += 1;
+    if(this.currentLetter < wantedname.length)
+      this.namedisplay = this.namedisplay.replaceAt(this.currentLetter+1, wantedname[this.currentLetter+1]);
+    this.currentLetter += 2;
     window.setTimeout(() => {
       this.addLetter();
     }, 100);

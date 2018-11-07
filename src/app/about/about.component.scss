@@ -6,8 +6,6 @@
     margin:20px auto;
     padding: 20px;
     height:auto;
-    padding-bottom:5px;
-    margin-bottom: 20px;
     width:60%;
 
     div {
@@ -18,10 +16,16 @@
         color:white;
     }
 
-    ::ng-deep h1{
+    ::ng-deep h2{
         margin: 2px;
         padding: 2px;
     }
+
+    ::ng-deep p {
+        margin: 2px;
+        padding:2px;
+    }
+
     img {
         float:right;
         width:40%;

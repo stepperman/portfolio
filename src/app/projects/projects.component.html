@@ -1,5 +1,5 @@
 <div (mousedown)="closeProject($event)" hidden id="projectlist">
-    <div onclick="javascript:void(0)" class="infoclosed" id="projectlistwrapper">
+    <div onclick="javascript:void(0)" class="infoclosed" ng-class="hidden ? 'hidden-project' : ''" id="projectlistwrapper">
         <div id="info_video">
             <video loop autoplay muted>
               <source src="assets/img/{{currentProject.videoLink}}"/>
@@ -31,8 +31,8 @@
     </div>
 </div>
 
-<div class="wrapper projects">
-  <div *ngFor="let project of projects" class="actualproject">
+<div class=" projects">
+  <div *ngFor="let project of projects" class="actualproject" [ngClass]="project.hidden ? 'hidden' : ''">
     <div id="project" class="project">
         <div id="projectleft" (mouseenter)="mouseOver($event)" (mouseleave)="mouseLeave($event)">
             <div class="projectimagewrapper">
@@ -59,4 +59,5 @@
         </div>
     </div>
   </div>
+  <app-project-filter *ngIf="projects" [allProjects]="projects"></app-project-filter>
 </div>
