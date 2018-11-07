@@ -10,6 +10,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { HttpClientModule } from '@angular/common/http';
 import { KeepHTMLPipe } from './keep-html.pipe';
 import { ContactComponent } from './contact/contact.component';
+import { ProjectFilterComponent } from './project-filter/project-filter.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ContactComponent } from './contact/contact.component';
     AboutComponent,
     ProjectsComponent,
     KeepHTMLPipe,
-    ContactComponent
+    ContactComponent,
+    ProjectFilterComponent
   ],
   imports: [
     BrowserModule,

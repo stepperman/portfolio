@@ -68,17 +68,26 @@ a span {
 }
 
 // logo
+.middle {
+    div {
+        color:white;
+        height:100%;
+        display:inline-flex;
+        justify-content: center;
+        align-content: center;
 
-.middle > div  > strong {
-    font-size:2em;
-    color:white;
-    align-self:center;
-}
+        strong {
+            font-size:2em;
+            color:white;
+            align-self:center;
+        }
 
-.middle div {
-    color:white;
-    height:100%;
-    display:inline-flex;
-    justify-content: center;
-    align-content: center;
+        b {
+            margin: 0 10px 0 10px;
+            font-size: 1.2em;
+            color:white;
+            align-self:center;
+            font-weight:50;
+        }
+    }
 }

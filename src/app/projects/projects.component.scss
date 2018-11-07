@@ -12,6 +12,12 @@
     background-color: #35273b;
 }
 
+.projects {
+    width: 886px + 170px !important;
+    position:relative;
+    margin: 0 auto;
+}
+
 .projectvideo, .projectimage {
     width:100%;
     max-width:100%;
@@ -263,7 +269,7 @@ label {
     margin: 0.5em;
 }
 
-.actualproject.hidden {
+.hidden {
     height:0;
     overflow: hidden !important;
     transition: height 0.5s hidden 0 0.5s;
