@@ -23,7 +23,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "./node_modules/highlight.js/styles/atom-one-light.css"
             ],
             "scripts": [
               "./src/js/bin/materialize.min.js"

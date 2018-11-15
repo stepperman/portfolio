@@ -4,7 +4,8 @@ import { Project } from '../project';
 import { MockNgModuleResolver } from '@angular/compiler/testing';
 declare var require:any;
 
-const markdown = require("markdown").markdown;
+const markdown = require("marked");
+import {highlightBlock} from "highlight.js";
 
 @Component({
   selector: 'app-projects',
@@ -50,8 +51,10 @@ export class ProjectsComponent implements OnInit {
     let video = <HTMLVideoElement>element.querySelector("video");
     element.querySelector("img").hidden = false;
 
-    if(!video.paused)
+    if(!video.paused) {
       video.pause();
+      video.currentTime = 0;
+    }
   }
 
   openProject(project) {
@@ -68,14 +71,26 @@ export class ProjectsComponent implements OnInit {
     document.body.style.overflow = "hidden";
 
     this.service.readFile("./assets/md/" + this.currentProject.markdownLink, (data) => {
-      this.currentProject.parsedmarkdown = markdown.toHTML(data);
-      console.log(this.currentProject.parsedmarkdown)
+      this.currentProject.parsedmarkdown = markdown(data);
+
     });
 
     window.setTimeout(() => {
       video.pause();
       video.load();
       video.play();
+
+      let codes = document.querySelectorAll("pre code");
+      console.log(codes.length);
+
+      for(let i = 0; i < codes.length; i++)
+      {
+        highlightBlock(codes[i]);
+      }
+
+      let description = document.getElementById("info_description");
+      this.currentProject.parsedmarkdown = description.innerHTML;
+
     }, 200)
   }
 

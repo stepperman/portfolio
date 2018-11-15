@@ -1,4 +1,45 @@
 [
+
+  {
+    "imageLink":"Kwartet.png",
+    "videoLink":"Kwartet_small.mp4",
+    "markdownLink":"kwartet.md",
+    "title":"Kwartet",
+    "description":"Kwartet is a game where you match 4. It's been made using C# and HTML5 and is my first time using socket connection",
+    "tags":["Personal","C#","Monogame","Javascript"],
+
+    "info" : {
+      "Status":"Finished",
+      "Time":"Period of 4 weeks",
+      "Type":"School",
+      "Language":"C#"
+    },
+
+    "links" : {
+      "github":"https://github.com/stepperman/gamelab"
+    }
+  },
+
+  {
+    "imageLink":"qtreminder.png",
+    "videoLink":"qtreminder_small.mp4",
+    "markdownLink":"qtreminder.md",
+    "title":"Discord Reminder Bot",
+    "description":"qtReminder is a Discord bot that announces when a torrent comes out for a person's subscribed anime.",
+    "tags":["Personal","C#"],
+
+    "info" : {
+      "Status":"Finished, but still improving",
+      "Time":"Period of 2 days",
+      "Type":"Personal",
+      "Language":"C#"
+    },
+
+    "links" : {
+      "github":"https://github.com/stepperman/qtreminder"
+    }
+  },
+
   {
     "imageLink":"omelette.png",
     "videoLink":"omelette.mp4",

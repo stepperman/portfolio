@@ -3,7 +3,7 @@
     height: 382px;
     max-height: 382px;
     display:block;
-    position:absolute;
+    position:relative;
     margin: 15px;
     overflow:hidden;
     outline: 1px solid transparent;
@@ -270,9 +270,21 @@ label {
 }
 
 .hidden {
-    height:0;
+    height: 0;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
     overflow: hidden !important;
     transition: height 0.5s hidden 0 0.5s;
+}
+
+::ng-deep pre {
+    max-height:35em;
+    overflow:scroll;
+    padding: 1em;
+    min-width:140%;
+    background-color: #eee;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
 }
 
 #projectleft {
