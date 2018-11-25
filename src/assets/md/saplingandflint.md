@@ -3,7 +3,7 @@
 Sapling & Flint is a 3D Action/Adventure game made in 4 weeks, together 4 artists and 3 developers.  
 In this game you fight your evil brother, and the bears he made evil, to save him and the world.
 
-## What I did and learned
+## What I did
 
 Most of the project I was working on the collision. This took up most of my time, 
 as this was a challenge I did not expect this difficult.
@@ -18,8 +18,8 @@ I'm proud of. But I learned it, so it's here. Sigh.
 
 ### Boss fight?
 
-I'm just grasping at straws here because I want more content in this, but I also made the boss fight! 
-This used two (2!) state machines, provided by Timo Heijne (Epic), the main state machine, which checks
+Something I also did at the end of the project was make the boss fight
+This used two (2!) state machines, the main state machine, which checks
 for distance, attacking phases, and dizzy states, handles well... the main states. The secondary 
 state machine handles all... secondary states, as the name implies. These are the attack states, handled
 by the main state machine. These are the attacks the boss can execute while in this phase. Which are only
@@ -39,3 +39,7 @@ I really wish you could hear it, but you can't. Ever.
 ###### Sound effects
 
 ..Eh. I did the sound effects.
+
+## What I could've done differently
+
+I put too much time into developing my own character collision/controller. This lead to me not being as big of a help to the project as I could've been, and this also is the cause of the boss fight being a bit weird. Because of this, I missed out on the opportunity to correctly polish the game with sound effects and the likes.

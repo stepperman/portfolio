@@ -3,7 +3,7 @@
 Something I wanted to learn was how to make a terrain that can be demolished, and then have objects collide with that collision.  
 I ran into some trouble with making this, and I'll explain what in the following text.
 
-## What did I do and learn?
+## What I did
 
 ### SFML
 

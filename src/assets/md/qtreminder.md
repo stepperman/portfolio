@@ -28,6 +28,8 @@ This is done with the message waiter. The message waiter waits for messages in t
 
 You can also provide an additional class/array for further help if needed in the task that it calls.
 
+Here a snippet of code that uses this waiter.
+
 ```C#
 private async Task<bool> WaiterFunction(SocketMessage message, object @params)
 {

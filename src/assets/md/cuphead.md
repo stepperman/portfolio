@@ -2,7 +2,7 @@
 
 Cuphead is a game for the vertical slice assignment at school. We had to choose a game to recreate from 10 seconds of footage, and we chose Cuphead! We could make our own twist on this, so we decided to make our own boss fight.
 
-## What I did and learn
+## What I did
 
 ### Player
 

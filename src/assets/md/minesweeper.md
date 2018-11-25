@@ -4,7 +4,7 @@ In the third year of school, we had to create small test-assignments where we ju
 
 The UI resembles a Windows 98 desktop and it also uses the 98 minesweeper sprites. As extra fun I made a feature where you can move around the window and even close it. (With no way to open it again...) 
 
-## What did I do and learn?
+## What I did
 
 ### Webpack
 

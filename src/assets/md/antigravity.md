@@ -1,9 +1,9 @@
-# Anti-gravity, now this is epic
+# Anti-gravity
 
 Anti gravity is a platformer game where you can.. well.. switch your gravity. 
 It was made in Game Maker Studio in the span of 8 weeks, and I made everything myself.
 
-## What did I do and learn? 
+## What did I 
 
 ### Collision
 
@@ -19,9 +19,8 @@ sound harder than it is, because it's really quite easy.
 ### Animations
 
 It might be a surprise considering how extremely good the game looks (lol), but everything is drawn by 
-me. Contrary to what others say, nothing has been rotoscoped, although I did use the jump animation from
-Prince of Persia as reference, which was also an inspiration to this game. For the rest, I just looked up
-videos of people, or googled images of them in certain poses as reference to draw those poses in my
+me. I used real videos as reference for how I should animate it, and for one animation I also used 
+Prince of Persia as reference, which was also an inspiration to this game.
 game. Neat.
 
 ### State Machine 

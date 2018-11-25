@@ -10,3 +10,18 @@
     position:relative;
     text-align:center;
 }
+
+
+a {
+    text-align:left;
+
+    span {
+        display:inline-block;
+        position:absolute;
+        top:0;
+        left:0;
+        font-weight:600;
+        width: 100%;
+        text-align:center;
+    }
+}

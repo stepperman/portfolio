@@ -1,31 +1,10 @@
 [
-
-  {
-    "imageLink":"Kwartet.png",
-    "videoLink":"Kwartet_small.mp4",
-    "markdownLink":"kwartet.md",
-    "title":"Kwartet",
-    "description":"Kwartet is a game where you match 4. It's been made using C# and HTML5 and is my first time using socket connection",
-    "tags":["Personal","C#","Monogame","Javascript"],
-
-    "info" : {
-      "Status":"Finished",
-      "Time":"Period of 4 weeks",
-      "Type":"School",
-      "Language":"C#"
-    },
-
-    "links" : {
-      "github":"https://github.com/stepperman/gamelab"
-    }
-  },
-
   {
     "imageLink":"qtreminder.png",
     "videoLink":"qtreminder_small.mp4",
     "markdownLink":"qtreminder.md",
-    "title":"Discord Reminder Bot",
-    "description":"qtReminder is a Discord bot that announces when a torrent comes out for a person's subscribed anime.",
+    "title":"qtReminder Discord Bot",
+    "description":"qtReminder is a Discord bot that announces when a torrent comes out for a person's subscribed show.",
     "tags":["Personal","C#"],
 
     "info" : {
@@ -41,6 +20,28 @@
   },
 
   {
+    "imageLink":"Kwartet.png",
+    "videoLink":"kwartet_small.mp4",
+    "markdownLink":"kwartet.md",
+    "title":"Kwartet",
+    "description":"Kwartet is a game where you match 4. It's been made using C# and HTML5 and is my first time using socket connection",
+    "tags":["Personal","C#","Monogame","Javascript"],
+
+    "info" : {
+      "Status":"Finished",
+      "Time":"Period of 4 weeks",
+      "Type":"School",
+      "Language":"C#"
+    },
+
+    "links" : {
+      "github":"https://github.com/stepperman/gamelab",
+      "Desktop Client":"https://github.com/stepperman/gamelab/releases",
+      "Mobile Client": "http://stepperman.me/Client"
+    }
+  },
+
+  {
     "imageLink":"omelette.png",
     "videoLink":"omelette.mp4",
     "markdownLink":"omelette.md",
@@ -50,7 +51,7 @@
 
     "info" : {
       "Status":"Finished",
-      "Time":"8 weeks",
+      "Time":"Period of 8 weeks",
       "Type":"school",
       "Team":"2 devs, 3 artists",
       "Language":"C#",
@@ -58,7 +59,8 @@
     },
 
     "links" : {
-      "github":"https://github.com/stepperman/asstroids"
+      "github":"https://github.com/stepperman/asstroids",
+      "play":"http://20190.hosts.ma-cloud.nl/bewijzenmap/bewijzenmap/P1.4/ExpandingSpace/"
     }
   },
 
@@ -79,7 +81,8 @@
     },
 
     "links" : {
-      "github":"https://github.com/stepperman/anti-gravity"
+      "github":"https://github.com/stepperman/anti-gravity",
+      "download":"https://github.com/stepperman/anti-gravity/releases"
     }
   },
 
@@ -102,7 +105,8 @@
     },
 
     "links" : {
-      "github":"https://github.com/lghenk/Mythe-Project"
+      "github":"https://github.com/lghenk/Mythe-Project",
+      "download":"https://github.com/lghenk/Mythe-Project/releases"
     }
   },
 
@@ -125,7 +129,8 @@
     },
 
     "links" : {
-      "github":"https://github.com/lghenk/Cuphead"
+      "github":"https://github.com/lghenk/Cuphead",
+      "download":"https://github.com/lghenk/Cuphead/releases"
     }
   },
   {
@@ -169,7 +174,9 @@
     },
 
     "links" : {
-      "github":"https://github.com/stepperman/destructableground"
+      "github":"https://github.com/stepperman/destructibleground",
+      "download":"https://github.com/stepperman/DestructibleGround/releases"
+      
     }
   }  
 ]

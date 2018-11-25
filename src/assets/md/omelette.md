@@ -4,7 +4,7 @@ Space Omelette was puzzle platformer game made in the first year at school.
 The goal of this game is to complete each room as you progress through the level and eventually
 complete the game.  
 
-## What I did and learned
+## What I did
 
 ### Player Collision
 
@@ -26,3 +26,5 @@ The game also includes water, which I created with the help of a guide, but I im
 Light eggs float, heavy eggs sink, and the player is slowly submerged in the water.  
 I created my own collision detection for this water, where it detects the point of the player in accordance to the position of the water and checks if he's in the water.
 Meaning, if there are heavy waves, the objects can exit or enter the water condition depending on the height of the waves.
+
+## What I could've done differently

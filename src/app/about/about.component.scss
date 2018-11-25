@@ -22,7 +22,7 @@
     }
 
     ::ng-deep p {
-        margin: 2px;
+        margin: 1em;
         padding:2px;
     }
 
@@ -31,5 +31,8 @@
         width:40%;
         margin: 30px;
         margin-bottom:15px;
+        border: 10px solid #35273b;
     }
+
+
 }
