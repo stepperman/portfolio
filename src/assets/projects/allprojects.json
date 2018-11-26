@@ -21,7 +21,7 @@
 
   {
     "imageLink":"Kwartet.png",
-    "videoLink":"kwartet_small.mp4",
+    "videoLink":"Kwartet_small.mp4",
     "markdownLink":"kwartet.md",
     "title":"Kwartet",
     "description":"Kwartet is a game where you match 4. It's been made using C# and HTML5 and is my first time using socket connection",
