@@ -35,8 +35,8 @@
     },
 
     "links" : {
-      "github":"https://github.com/stepperman/gamelab",
-      "Desktop Client":"https://github.com/stepperman/gamelab/releases",
+      "github":"https://github.com/stepperman/quartet",
+      "Desktop Client":"https://github.com/stepperman/quartet/releases",
       "Mobile Client": "http://stepperman.me/Client"
     }
   },
