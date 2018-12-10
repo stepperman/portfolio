@@ -1,12 +1,8 @@
 # qtReminder
 
-_noun_
-weeaboo
- * Someone that likes anime, or something.
-
-My friends on Discord frequently watch anime that is current airing. Waiting every week, and knowing at which time we can watch the anime specifically is 
-a task too annoying that we don't want to do it. So I decided to do something _cool_ (weeb). Which is make a Discord bot, which lets people subscribe, and then periodically 
-checks an Japanese media torrent site for new releases. This bot runs on my VPS server.
+My friends on Discord frequently watch shows that is current airing. Waiting every week, and knowing at which time we can watch the show specifically is 
+a task too annoying that we don't want to do it. So I decided to make a bot for it. Which is make a Discord bot, which lets people subscribe, and then periodically 
+checks an media torrent site for new releases. This bot runs on my VPS server.
 
 ## What I did
 
