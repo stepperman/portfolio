@@ -33,14 +33,14 @@
 
 <div class=" projects">
   <div *ngFor="let project of projects" class="actualproject" [ngClass]="project.hidden ? 'hidden' : ''">
-    <div id="project" class="project">
-        <div id="projectleft" (mouseenter)="mouseOver($event)" (mouseleave)="mouseLeave($event)">
+    <div id="project" class="project" (mouseenter)="mouseOver($event)" (mouseleave)="mouseLeave($event)">
+        <div id="projectleft" >
             <div class="projectimagewrapper">
                 <img class="projectimage" src="assets/img/{{project.imageLink}}"/>
             </div>
 
             <div class="projectvideo">
-                <video muted loop>
+                <video muted loop onloadedmetadata="this.muted=true">
                     <source src="assets/img/{{project.videoLink}}"/>
                 </video>
             </div>

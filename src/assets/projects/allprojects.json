@@ -105,30 +105,6 @@
   },
 
   {
-    "imageLink":"saplingandflint.png",
-    "videoLink":"saplingandflint.mp4",
-    "title":"Sapling & Flint",
-    "markdownLink":"saplingandflint.md",
-    "description":"Sapling & Flint was a game made for the Myth assignment at my school. We had a list of myths, and we chose Sapling and Flint.",
-    "github":"https://github.com/lghenk/Mythe-Project",
-    "tags":["School","Unity","C#","3D"],
-
-    "info" : {
-      "Status":"Finished",
-      "Time":"8 weeks",
-      "Type":"School",
-      "Team":"3 devs, 4 artists",
-      "Language":"C#",
-      "Engine":"Unity"
-    },
-
-    "links" : {
-      "github":"https://github.com/lghenk/Mythe-Project",
-      "download":"https://github.com/lghenk/Mythe-Project/releases"
-    }
-  },
-
-  {
     "imageLink":"cuphead.png",
     "videoLink":"cuphead.mp4",
     "title":"Cuphead",
