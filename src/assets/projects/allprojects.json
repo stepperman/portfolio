@@ -20,6 +20,24 @@
   },
 
   {
+    "imageLink":"talespin3.jpg",
+    "videoLink":"talespin.mp4",
+    "markdownLink":"talespin.md",
+    "title":"Talespin Virtual Human",
+    "description":"Talespin's Virtual Human technology is made for practicing skills like negotiation, sales and other soft skills used in the workplace",
+    "tags":["C#","Unity","Internship"],
+
+    "info" : {
+      "Type" : "Internship",
+      "Time" : "From February till July",
+      "Language" : "C#",
+      "Engine" : "Unity"
+    },
+
+    "links" : {  }
+  },
+
+  {
     "imageLink":"Kwartet.png",
     "videoLink":"Kwartet_small.mp4",
     "markdownLink":"kwartet.md",

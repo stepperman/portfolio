@@ -19,6 +19,7 @@
 }
 
 .projectvideo, .projectimage {
+    object-fit:cover;
     width:100%;
     max-width:100%;
     height: 382px;
@@ -26,12 +27,11 @@
 }
 
 .projectvideo > video {
-    object-fit: fill;
+    object-fit: cover;
     width:100%;
     max-width:100%;
     height: 382px;
     max-height: 382px;
-
 }
 
 #projectright {
@@ -129,11 +129,15 @@ tag::after {
 }
 
 #info_description {
-    width:50%;
+    width:60%;
     float:left;
 
     ::ng-deep p {
         font-size:16px !important;
+    }
+
+    ::ng-deep img {
+        width:100%;
     }
 
      ::ng-deep h1 {
@@ -174,12 +178,12 @@ code {
 #info_other {
     margin-top:42px;
     float:right;
-    width:300px;
+    min-width:250px;
 }
 
 #info_links {
     float:right;
-    width:300px;
+    width:250px;
     margin-top:20px;
 
     a {
